@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+  <h4>Lorem ipsum dolor sit amet.</h4>
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+
+  <script type="text/javascript">
+  // *Making an Element with js:*
+
+    function createElement(color){
+      // console.log('working');
+      // Get the element you want to add your new element before or after
+      var gimmeH4 = document.querySelector('h4');
+
+      // Create the new element
+      // This can be any valid HTML element: p, article, span, etc...
+      var p = document.createElement('p');
+
+      // Add content to the new element
+      p.innerText = 'This is brand new and made with js!';
+      p.style.color = color
+
+
+      // Insert the new node before the reference node
+      gimmeH4.after(p);
+    }
+
+    createElement('pink');
+
+    // Using Arguments with functions
+
+    // p.style.color = 'green';
+    // p.style.fontSize = '90px';
+
+    // p.setAttribute('id', 'idName');
+    // p.setAttribute('class', 'some-class')
+    // p.setAttribute('style', 'font-size: 44px; font-style: italic; color: pink;')
+  </script>
+</body>
+</html>

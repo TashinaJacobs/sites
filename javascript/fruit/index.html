@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+img {
+  display: none;
+}
+
+.promt{
+  font-size: 14px;
+}
+
+</style>
+
+<body>
+
+<h1>Instructions <i class="promt">(Please read)</i></h1>
+<p>Write Banana, Orange, Apple and then try Fruit Cake in the input field and click the 'try it'.</p>
+<p>Decide which one is your least favorite after trying all four!</p>
+<!-- <p>The switch statement will execute a block of code based on your input.</p> -->
+
+<img src="apple.png" alt="" id="apple">
+<img src="orange.png" alt="" id="orange">
+<img src="banana.png" alt="" id="banana">
+<img src="fruit-cake.png" alt="" id="fruitCake">
+
+<input id="myInput" type="text">
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+//getElementById used here grabs info from the img element on this document//
+    var apple = document.getElementById('apple');
+    var orange = document.getElementById('orange');
+    var banana = document.getElementById('banana');
+    var fruitCake = document.getElementById('fruitCake');
+
+//function BEGINS//
+function myFunction() {
+
+    var text;
+    var fruits = document.getElementById("myInput").value;
+
+    switch(fruits) {
+        case "Banana":
+        text = "Banana is good!";
+        banana.style.display = 'block';
+        orange.style.display = 'none';
+        apple.style.display = 'none';
+        fruitCake.style.display = 'none';
+        break;
+        case "Orange":
+        text = "I am not a fan of orange.";
+        orange.style.display = 'block';
+        banana.style.display = 'none';
+        apple.style.display = 'none';
+        fruitCake.style.display = 'none';
+        break;
+        case "Apple":
+        text = "How you like them apples?";
+        apple.style.display = 'block';
+        banana.style.display = 'none';
+        orange.style.display = 'none';
+        fruitCake.style.display = 'none';
+        break;
+        case "Fruit Cake":
+        text = "This is what they call \"bad fruit\"!!!";
+        fruitCake.style.display = 'block';
+        banana.style.display = 'none';
+        orange.style.display = 'none';
+        apple.style.display = 'none';
+        break;
+        default:
+        text = "I have never heard of that fruit... Make sure your letter CASING is correct";
+    }
+
+    document.getElementById("demo").innerHTML = text;
+
+} // function ENDS//
+
+</script>
+
+</body>
+</html>

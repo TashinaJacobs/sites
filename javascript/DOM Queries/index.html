@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		iframe {
+			display: none;
+		}
+
+	</style>
+	<link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+</head>
+<body>
+	<h1>Good Day</h1>
+	<ul id="listParent">
+		<li class="a-class">1</li>
+		<li class="a-class">2</li>
+		<li class="a-class">3</li>
+		<li class="a-class">4</li>
+		<li class="a-class">5</li>
+	</ul>
+	<p class="a-class">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, rem aut pariatur corporis, dolorum, libero autem deleniti porro magnam laborum accusamus et fugiat! Placeat quaerat nulla eos quas, quia libero.</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto quod, totam vel hic aperiam laborum minus non vitae rerum culpa, voluptas obcaecati alias itaque, impedit quis harum nobis ea nam.</p>
+	<p class="question">"How was Tuesday's lesson?"</p>
+	<iframe src="https://giphy.com/embed/Wg6sfwn9f0sJq" width="427" height="480" frameBorder="0" class="giphy-embed answer" allowFullScreen></iframe>
+	<h4 class="a-class"></h4>
+	<script>
+		(function(){ // iife STARTS
+
+      //DOM Queries// // variables and function 'style changes'
+      var getAllListItems = document.getElementById('listParent');
+      var getQuestion = document.querySelector('.question');
+
+
+      console.dir(getQuestion)
+
+        function styleChange(element){
+          element.style.listStyle = 'none';
+          element.style.fontSize = '30px';
+        }
+
+        styleChange(getAllListItems);
+
+
+        function styleChangeB(element){
+          element.style.fontSize = '50px';
+          element.style.color = '#f06d06';
+        }
+
+        styleChangeB(getQuestion);
+
+        // Different Dom Queries // -Add to this- //
+
+          var fullList = document.getElementsByClassName('a-class');
+          console.dir(fullList)
+
+            var fullList = document.querySelector('#listParent');
+            console.dir(fullList)
+
+              var fullList = document.getElementById('listParent');
+              console.dir(fullList)
+
+  })(); // iife ENDS
+	</script>
+</body>
+
+
+</html>
