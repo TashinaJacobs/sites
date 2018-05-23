@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  
+  float: left;
+}
+
+.cart{
+  color: white;
+  background: #919396;
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  border: 10px solid #43484f;
+}
+
+.col{
+  padding: inherit;
+}

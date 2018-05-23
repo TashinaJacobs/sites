@@ -1,0 +1,85 @@
+
+
+.row{
+  background-color: #9599a0;
+  /* border: none; */
+}
+
+/* .boxWithBorder {
+  border: solid 1px #4a4e56;
+  height: 200px;
+  box-sizing: border-box;
+} */
+
+.box-sizing{
+  height: 230px;
+  color: #fff;
+  font-size: 30px;
+  border: solid 2px #fff;
+  border-radius: 10px;
+}
+
+.travel{
+  background: url("../img/travel.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+.shop{
+  background: url("../img/shop.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+
+.phone{
+  background: url("../img/phone.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+.gift{
+  background: url("../img/gift.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+.money{
+  background: url("../img/money.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+.dinner{
+  background: url("../img/dining.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+h2{
+  font-size: 15px;
+  padding-top: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.date{
+  background-color: #898980;
+}
+
+h1{
+  text-align: center;
+}
+
+.underline {
+  border-bottom: 1px solid #323232;
+  list-style: none;
+}
+
+.btn-sm{
+  background-color: #898980;
+  color: #fff;
+  border: #fff;
+  top: 100px;
+  left: 55px;     //change these individually//
+}
